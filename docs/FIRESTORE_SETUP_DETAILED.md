@@ -1,5 +1,12 @@
 # Firebase Firestore Setup Guide
 
+## App Links
+- Repository: https://github.com/kranthikiran885366/vignan-event-booking
+- Actions: https://github.com/kranthikiran885366/vignan-event-booking/actions
+- Releases: https://github.com/kranthikiran885366/vignan-event-booking/releases
+- Latest release APK: https://github.com/kranthikiran885366/vignan-event-booking/releases/latest/download/app-release.apk
+- Full links index: docs/APK_LINKS.md
+
 ## Prerequisites
 - Firebase project created in [Firebase Console](https://console.firebase.google.com)
 - Android app registered in Firebase project with package `com.example.myapplication`
@@ -32,10 +39,11 @@ service cloud.firestore {
       allow read, write: if false;
     }
 
-    // Allow authenticated users to read equipment
+    // Equipment catalog
     match /equipment/{equipmentId} {
       allow read: if request.auth != null;
-      allow write: if request.auth.token.admin == true;
+      allow create, update: if request.auth != null;
+      allow delete: if request.auth.token.admin == true;
     }
 
     // Allow authenticated users to work with their bookings

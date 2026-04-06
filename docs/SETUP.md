@@ -1,5 +1,12 @@
 # Setup Guide
 
+## App Links
+- Repository: https://github.com/kranthikiran885366/vignan-event-booking
+- Actions: https://github.com/kranthikiran885366/vignan-event-booking/actions
+- Releases: https://github.com/kranthikiran885366/vignan-event-booking/releases
+- Latest release APK: https://github.com/kranthikiran885366/vignan-event-booking/releases/latest/download/app-release.apk
+- Full links index: docs/APK_LINKS.md
+
 ## Prerequisites
 - Android Studio (latest stable)
 - Android SDK 34

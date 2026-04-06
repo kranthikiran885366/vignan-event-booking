@@ -1,21 +1,34 @@
-# APK Links
+# APK and App Links
 
-## Local APK Paths
-- Debug APK:
-  - app/build/outputs/apk/debug/app-debug.apk
-- Release APK:
-  - app/build/outputs/apk/release/app-release.apk
+This file is the single source for repository, CI, release, and APK download links.
 
-## GitHub Actions APK Artifacts
-- Workflow: Android CI
-- Artifact name: app-debug-apk
-- Access path:
-  - GitHub -> Actions -> Android CI -> latest successful run -> Artifacts
+## Repository Links
+- Repository: https://github.com/kranthikiran885366/vignan-event-booking
+- Main branch: https://github.com/kranthikiran885366/vignan-event-booking/tree/main
+- Actions: https://github.com/kranthikiran885366/vignan-event-booking/actions
+- Releases: https://github.com/kranthikiran885366/vignan-event-booking/releases
+- Pull requests: https://github.com/kranthikiran885366/vignan-event-booking/pulls
+- Issues: https://github.com/kranthikiran885366/vignan-event-booking/issues
 
-## GitHub Release APK Direct Link
-After running release workflow, APK is published as release asset.
+## Issue Templates
+- New bug report: https://github.com/kranthikiran885366/vignan-event-booking/issues/new?template=bug_report.md
+- New feature request: https://github.com/kranthikiran885366/vignan-event-booking/issues/new?template=feature_request.md
 
-Use this URL pattern:
-- https://github.com/<owner>/<repo>/releases/latest/download/app-release.apk
+## Release APK Links
+- Latest release APK: https://github.com/kranthikiran885366/vignan-event-booking/releases/latest/download/app-release.apk
+- Release page (manual asset selection): https://github.com/kranthikiran885366/vignan-event-booking/releases
 
-Replace <owner>/<repo> with your actual GitHub repository path.
+## CI Artifact APK (Debug)
+1. Open Actions: https://github.com/kranthikiran885366/vignan-event-booking/actions
+2. Open latest successful run of Android CI
+3. Download artifact named app-debug-apk
+
+## Local Build APK Paths
+- Debug APK: app/build/outputs/apk/debug/app-debug.apk
+- Release APK: app/build/outputs/apk/release/app-release.apk
+
+## Quick Build Commands
+```powershell
+$env:GRADLE_USER_HOME="$PWD/.gradle-local"; ./gradlew.bat :app:assembleDebug --no-daemon
+$env:GRADLE_USER_HOME="$PWD/.gradle-local"; ./gradlew.bat :app:assembleRelease --no-daemon
+```

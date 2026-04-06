@@ -1,5 +1,11 @@
 # Profile Save "Document Not Found" Error - Fixed
 
+## App Links
+- Repository: https://github.com/kranthikiran885366/vignan-event-booking
+- Releases: https://github.com/kranthikiran885366/vignan-event-booking/releases
+- Latest APK: https://github.com/kranthikiran885366/vignan-event-booking/releases/latest/download/app-release.apk
+- Full links index: docs/APK_LINKS.md
+
 ## Problem
 When you tried to save profile changes (Edit Profile), you saw:
 > **Failed to save profile: Document not found**

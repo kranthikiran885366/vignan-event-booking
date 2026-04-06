@@ -1,6 +1,13 @@
 # Firebase Setup (Real Backend)
 
-This app is configured for real Firebase services only. **No mocks or seed data fallbacks.**
+This app is configured for real Firebase services only.
+
+## App Links
+- Repository: https://github.com/kranthikiran885366/vignan-event-booking
+- Actions: https://github.com/kranthikiran885366/vignan-event-booking/actions
+- Releases: https://github.com/kranthikiran885366/vignan-event-booking/releases
+- Latest release APK: https://github.com/kranthikiran885366/vignan-event-booking/releases/latest/download/app-release.apk
+- Full links index: docs/APK_LINKS.md
 
 ## ⚠️ Important: Create Firestore Database First
 
@@ -48,7 +55,8 @@ service cloud.firestore {
 
     match /equipment/{equipmentId} {
       allow read: if request.auth != null;
-      allow write: if request.auth.token.admin == true;
+      allow create, update: if request.auth != null;
+      allow delete: if request.auth.token.admin == true;
     }
 
     match /bookings/{bookingId} {
