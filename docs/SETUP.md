@@ -36,6 +36,16 @@ adb install -r app/build/outputs/apk/debug/app-debug.apk
 $env:GRADLE_USER_HOME="$PWD/.gradle-local"; ./gradlew.bat :app:assembleRelease --no-daemon
 ```
 
+## End-to-End Verification Checklist
+- [ ] App builds without Gradle errors
+- [ ] Debug APK installs on device
+- [ ] Login succeeds (Email/Google/Guest)
+- [ ] Home screen shows equipment list
+- [ ] Reserve flow creates booking
+- [ ] Bookings tab shows history
+- [ ] Profile edit saves to Firestore
+- [ ] Notifications enabled and token saved
+
 ## Troubleshooting
 - If auth fails, verify SHA keys in Firebase console.
 - If Firestore empty, create equipment collection documents.

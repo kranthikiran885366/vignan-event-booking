@@ -2,6 +2,17 @@
 
 A real-time Android equipment booking app for college events, built with Firebase (Auth, Firestore, Storage, FCM) and modern Kotlin architecture.
 
+## Contents
+- Project Status
+- App Links
+- Local APK Outputs
+- Key Features
+- Tech Stack
+- Quick Start
+- End-to-End Runbook
+- Documentation Index
+- Notes
+
 ## Project Status
 - Build: PASS (`:app:assembleDebug`)
 - Install: PASS (`adb install -r app-debug.apk`)
@@ -48,6 +59,20 @@ $env:GRADLE_USER_HOME="$PWD/.gradle-local"; ./gradlew.bat :app:assembleDebug --n
 adb install -r app/build/outputs/apk/debug/app-debug.apk
 ```
 
+## End-to-End Runbook
+1. Configure Firebase app and place `app/google-services.json`.
+2. Create Firestore database in Firebase Console.
+3. Publish rules from `firestore.rules`.
+4. Enable providers: Email/Password, Google, Anonymous.
+5. Build and install debug APK.
+6. Login and verify Home list, Bookings, and Profile updates.
+
+## Quick Troubleshooting
+- Home list empty: verify Firestore rules are published and `equipment` read/write is allowed for authenticated users.
+- Permission denied: re-publish `firestore.rules` in Firebase Console.
+- Google sign-in fails: verify SHA-1/SHA-256 in Firebase project settings.
+- Release APK missing: check latest workflow/release links in `docs/APK_LINKS.md`.
+
 ## Documentation Index
 - Setup guide: docs/SETUP.md
 - Firebase setup: docs/FIREBASE_SETUP.md
@@ -62,3 +87,4 @@ adb install -r app/build/outputs/apk/debug/app-debug.apk
 ## Notes
 - Keep firestore.rules and app behavior aligned before release.
 - Never commit secrets other than expected Firebase Android client config.
+

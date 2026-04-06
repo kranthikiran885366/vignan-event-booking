@@ -2,6 +2,14 @@
 
 This app is configured for real Firebase services only.
 
+## Quick Setup Checklist
+- [ ] Create Firebase project and register Android app (`com.example.myapplication`)
+- [ ] Add `app/google-services.json`
+- [ ] Enable Auth providers (Email/Password, Google, Anonymous)
+- [ ] Create Firestore database in Native mode
+- [ ] Publish rules from `firestore.rules`
+- [ ] Build, install, and verify Home/Bookings/Profile flows
+
 ## App Links
 - Repository: https://github.com/kranthikiran885366/vignan-event-booking
 - Actions: https://github.com/kranthikiran885366/vignan-event-booking/actions
@@ -153,4 +161,9 @@ See [**FIRESTORE_SETUP_DETAILED.md**](FIRESTORE_SETUP_DETAILED.md) for:
 - Cloud Storage setup for images
 - FCM Push Notifications
 - Verification checklist
+
+## Related Fix Guides
+- `FIRESTORE_DATABASE_FIX.md`
+- `FIRESTORE_INDEX_FIX.md`
+- `PROFILE_SAVE_FIX.md`
 
