@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Full screen university campus background -->
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/img_splash_bg"
+        android:contentDescription="@string/content_status_icon" />
+
+    <!-- Deep dark overlay for readability -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#D4000000" />
+
+    <!-- Top gold accent bar -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:layout_gravity="top"
+        android:background="#C8960C" />
+
+    <!-- Center content -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="32dp">
+
+        <!-- Vignan Logo -->
+        <ImageView
+            android:layout_width="140dp"
+            android:layout_height="140dp"
+            android:src="@drawable/ic_vignan_logo"
+            android:contentDescription="Vignan University Logo"
+            android:scaleType="fitCenter" />
+
+        <!-- Gold divider line -->
+        <View
+            android:layout_width="80dp"
+            android:layout_height="2dp"
+            android:layout_marginTop="20dp"
+            android:background="#C8960C" />
+
+        <!-- University name -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="VIGNAN UNIVERSITY"
+            android:textColor="#C8960C"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:letterSpacing="0.12"
+            android:gravity="center"
+            android:shadowColor="#88000000"
+            android:shadowDx="0"
+            android:shadowDy="2"
+            android:shadowRadius="6" />
+
+        <!-- App name -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:text="@string/app_name"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:letterSpacing="0.04" />
+
+        <!-- Tagline -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/splash_tagline"
+            android:textColor="#BBFFFFFF"
+            android:textSize="13sp"
+            android:gravity="center" />
+
+        <!-- Gold divider line bottom -->
+        <View
+            android:layout_width="60dp"
+            android:layout_height="1dp"
+            android:layout_marginTop="20dp"
+            android:background="#88C8960C" />
+
+    </LinearLayout>
+
+    <!-- Bottom loading section -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:paddingBottom="48dp"
+        android:paddingTop="16dp">
+
+        <ProgressBar
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:indeterminateTint="#C8960C" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="@string/splash_loading"
+            android:textColor="#99FFFFFF"
+            android:textSize="12sp"
+            android:letterSpacing="0.06" />
+
+    </LinearLayout>
+
+    <!-- Bottom gold accent bar -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:layout_gravity="bottom"
+        android:background="#C8960C" />
+
+</FrameLayout>

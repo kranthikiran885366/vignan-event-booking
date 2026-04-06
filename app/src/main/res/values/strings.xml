@@ -1,0 +1,127 @@
+<resources>
+    <string name="app_name">College Event Equipment Booking</string>
+    <string name="title_equipment_booking">College Event Equipment Booking</string>
+    <string name="title_equipment_list">Equipment List</string>
+    <string name="title_login">Welcome Back</string>
+    <string name="title_register">Create Account</string>
+    <string name="title_my_bookings">My Bookings</string>
+    <string name="title_profile">My Profile</string>
+    <string name="title_equipment_detail">Equipment Detail</string>
+
+    <!-- Splash -->
+    <string name="splash_tagline">Manage College Events Seamlessly</string>
+    <string name="splash_loading">Loading&#8230;</string>
+
+    <!-- Login -->
+    <string name="hint_email">Email Address</string>
+    <string name="hint_password">Password</string>
+    <string name="hint_full_name">Full Name</string>
+    <string name="hint_student_id">Student ID</string>
+    <string name="btn_login">Login</string>
+    <string name="btn_register">Register</string>
+    <string name="btn_guest">Continue as Guest</string>
+    <string name="lbl_no_account">Don\'t have an account? </string>
+    <string name="lbl_have_account">Already have an account? </string>
+    <string name="lbl_sign_up">Sign Up</string>
+    <string name="lbl_sign_in">Sign In</string>
+    <string name="lbl_forgot_password">Forgot Password?</string>
+    <string name="error_email_empty">Email cannot be empty</string>
+    <string name="error_email_invalid">Enter a valid email address</string>
+    <string name="error_password_empty">Password cannot be empty</string>
+    <string name="error_password_short">Password must be at least 6 characters</string>
+    <string name="error_name_empty">Full name cannot be empty</string>
+    <string name="error_student_id_empty">Student ID cannot be empty</string>
+    <string name="login_success">Login successful! Welcome back.</string>
+    <string name="register_success">Account created successfully!</string>
+
+    <!-- Filter -->
+    <string name="label_category">Filter by Category</string>
+    <string name="label_booking_date">Booking Date (YYYY-MM-DD)</string>
+    <string name="hint_booking_date">YYYY-MM-DD</string>
+    <string name="label_status_grid">Quick Status</string>
+    <string name="label_equipment_list">Equipment List</string>
+
+    <!-- Equipment fields -->
+    <string name="hint_equipment_name">Equipment Name</string>
+    <string name="hint_quantity">Quantity</string>
+    <string name="hint_location">Location</string>
+    <string name="hint_date">Booking Date (YYYY-MM-DD)</string>
+    <string name="hint_category">Category</string>
+    <string name="hint_search">Search equipment&#8230;</string>
+
+    <!-- Status badges -->
+    <string name="status_available">Available</string>
+    <string name="status_low">Low Stock</string>
+    <string name="status_out">Out of Stock</string>
+
+    <!-- Dialog -->
+    <string name="confirm_reservation_title">Confirm Reservation</string>
+    <string name="confirm_reservation_message">Do you want to reserve this equipment?</string>
+    <string name="dialog_reserve_title">Confirm Reservation</string>
+    <string name="btn_confirm">Confirm</string>
+    <string name="btn_cancel">Cancel</string>
+    <string name="confirm">Confirm</string>
+    <string name="cancel">Cancel</string>
+
+    <!-- Snackbar -->
+    <string name="booking_successful">Booking Successful!</string>
+    <string name="undo">UNDO</string>
+    <string name="snack_booking_undone">Booking cancelled.</string>
+    <string name="snack_db_error">Database error. Tap to retry.</string>
+    <string name="snack_retry">RETRY</string>
+
+    <!-- Empty state -->
+    <string name="no_equipment_available">No Equipment Available</string>
+    <string name="empty_no_equipment_category">No equipment in this category.</string>
+    <string name="no_bookings_yet">No bookings yet.</string>
+
+    <!-- Add equipment -->
+    <string name="title_add_equipment">Add Equipment</string>
+    <string name="btn_save">Save</string>
+    <string name="fab_add">Add Equipment</string>
+    <string name="reserve">Reserve</string>
+    <string name="btn_view_details">View Details</string>
+
+    <!-- My Bookings -->
+    <string name="booking_id_format">Booking #%1$s</string>
+    <string name="booking_status_format">Status: %1$s</string>
+    <string name="booking_date_label">Date: %1$s</string>
+    <string name="booking_meta_format">Name: %1$s
+Student ID: %2$s
+Email: %3$s
+Category: %4$s
+Location: %5$s</string>
+    <string name="btn_cancel_booking">Cancel Booking</string>
+
+    <!-- Profile -->
+    <string name="lbl_logout">Logout</string>
+    <string name="lbl_edit_profile">Edit Profile</string>
+    <string name="lbl_total_bookings">Total Bookings</string>
+    <string name="lbl_active_bookings">Active</string>
+    <string name="lbl_member_since">Member Since</string>
+
+    <!-- Format strings -->
+    <string name="quantity_format">Qty: %1$d</string>
+    <string name="location_format">%1$s</string>
+    <string name="booking_date_format">%1$s</string>
+
+    <!-- Accessibility -->
+    <string name="content_status_icon">Equipment image</string>
+
+    <string name="default_web_client_id" translatable="false">409639185109-luv4elmcr8vqr7f25k6nbqqtvkbse4tb.apps.googleusercontent.com</string>
+
+    <!-- Bookings count -->
+    <string name="bookings_count_format">%1$d bookings</string>
+
+    <!-- Bottom nav -->
+    <string name="nav_home">Home</string>
+    <string name="nav_bookings">Bookings</string>
+    <string name="nav_profile">Profile</string>
+
+    <!-- Category spinner options -->
+    <string-array name="category_options">
+        <item>Audio</item>
+        <item>Visual</item>
+        <item>Misc</item>
+    </string-array>
+</resources>

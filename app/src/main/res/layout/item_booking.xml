@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="12dp"
+    android:clickable="true"
+    android:focusable="true"
+    app:cardBackgroundColor="@color/surface"
+    app:cardCornerRadius="18dp"
+    app:cardElevation="3dp"
+    app:rippleColor="#1A1565C0">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+
+        <!-- Left accent bar -->
+        <View
+            android:id="@+id/accentBar"
+            android:layout_width="4dp"
+            android:layout_height="0dp"
+            android:background="@color/primary"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <!-- Booking ID -->
+        <TextView
+            android:id="@+id/tvBookingId"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:textColor="@color/text_primary"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toStartOf="@+id/chipBookingStatus"
+            app:layout_constraintStart_toEndOf="@id/accentBar"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="Booking #ABC123" />
+
+        <!-- Status chip -->
+        <com.google.android.material.chip.Chip
+            android:id="@+id/chipBookingStatus"
+            style="@style/Widget.Material3.Chip.Assist"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textSize="11sp"
+            app:chipCornerRadius="12dp"
+            app:chipMinHeight="28dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/tvBookingId"
+            tools:text="CONFIRMED" />
+
+        <!-- Equipment name -->
+        <TextView
+            android:id="@+id/tvBookingEquipment"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="6dp"
+            android:textColor="@color/text_primary"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/accentBar"
+            app:layout_constraintTop_toBottomOf="@id/tvBookingId"
+            tools:text="Projector X1" />
+
+        <!-- Booking date -->
+        <TextView
+            android:id="@+id/tvBookingDate"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="4dp"
+            android:textColor="@color/text_secondary"
+            android:textSize="13sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/accentBar"
+            app:layout_constraintTop_toBottomOf="@id/tvBookingEquipment"
+            tools:text="Date: 2025-08-01" />
+
+        <TextView
+            android:id="@+id/tvBookingMeta"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="6dp"
+            android:textColor="@color/text_secondary"
+            android:textSize="12sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/accentBar"
+            app:layout_constraintTop_toBottomOf="@id/tvBookingDate"
+            tools:text="Name: John\nStudent ID: 22BCE001\nEmail: a@b.com\nCategory: Audio\nLocation: Hall A" />
+
+        <!-- Cancel booking button -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnCancelBooking"
+            style="@style/Widget.Material3.Button.OutlinedButton"
+            android:layout_width="wrap_content"
+            android:layout_height="36dp"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="12dp"
+            android:text="@string/btn_cancel_booking"
+            android:textSize="12sp"
+            app:cornerRadius="10dp"
+            app:strokeColor="@color/error"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvBookingMeta" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</com.google.android.material.card.MaterialCardView>

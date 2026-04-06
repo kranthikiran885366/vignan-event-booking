@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="240dp"
+    android:height="240dp"
+    android:viewportWidth="240"
+    android:viewportHeight="240">
+
+    <!-- ── Outer gold ring ─────────────────────────────────────── -->
+    <path
+        android:fillColor="#C8960C"
+        android:pathData="M120,4 C185.7,4 236,54.3 236,120 C236,185.7 185.7,236 120,236 C54.3,236 4,185.7 4,120 C4,54.3 54.3,4 120,4 Z" />
+
+    <!-- ── Maroon fill circle ──────────────────────────────────── -->
+    <path
+        android:fillColor="#7B1113"
+        android:pathData="M120,12 C181.3,12 228,58.7 228,120 C228,181.3 181.3,228 120,228 C58.7,228 12,181.3 12,120 C12,58.7 58.7,12 120,12 Z" />
+
+    <!-- ── White inner circle ─────────────────────────────────── -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M120,20 C177,20 220,63 220,120 C220,177 177,220 120,220 C63,220 20,177 20,120 C20,63 63,20 120,20 Z" />
+
+    <!-- ── Shield body - maroon ───────────────────────────────── -->
+    <path
+        android:fillColor="#7B1113"
+        android:pathData="M120,38 L168,56 L168,108 Q168,148 120,170 Q72,148 72,108 L72,56 Z" />
+
+    <!-- ── Shield inner border - gold ────────────────────────── -->
+    <path
+        android:fillColor="#C8960C"
+        android:pathData="M120,46 L162,62 L162,107 Q162,143 120,163 Q78,143 78,107 L78,62 Z" />
+
+    <!-- ── Shield center - white ─────────────────────────────── -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M120,54 L156,68 L156,106 Q156,138 120,156 Q84,138 84,106 L84,68 Z" />
+
+    <!-- ── Torch handle ───────────────────────────────────────── -->
+    <path
+        android:fillColor="#7B1113"
+        android:pathData="M116,100 L124,100 L126,130 L114,130 Z" />
+
+    <!-- ── Torch flame outer - gold ──────────────────────────── -->
+    <path
+        android:fillColor="#C8960C"
+        android:pathData="M120,60 Q130,68 128,80 Q124,90 120,92 Q116,90 112,80 Q110,68 120,60 Z" />
+
+    <!-- ── Torch flame inner - white ─────────────────────────── -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M120,66 Q126,72 124,80 Q122,86 120,87 Q118,86 116,80 Q114,72 120,66 Z" />
+
+    <!-- ── Big V letter - gold ───────────────────────────────── -->
+    <path
+        android:fillColor="#C8960C"
+        android:pathData="M92,100 L104,130 L120,112 L136,130 L148,100 L140,100 L120,124 L100,100 Z" />
+
+    <!-- ── Top banner arc - maroon ───────────────────────────── -->
+    <path
+        android:fillColor="#7B1113"
+        android:pathData="M38,44 Q120,22 202,44 L202,58 Q120,36 38,58 Z" />
+
+    <!-- ── Bottom banner arc - maroon ────────────────────────── -->
+    <path
+        android:fillColor="#7B1113"
+        android:pathData="M32,172 Q120,196 208,172 L208,186 Q120,210 32,186 Z" />
+
+    <!-- ── "VIGNAN" text top - gold letters (V) ──────────────── -->
+    <path
+        android:fillColor="#C8960C"
+        android:pathData="M56,46 L60,56 L64,46 L62,46 L60,53 L58,46 Z" />
+    <!-- I -->
+    <path
+        android:fillColor="#C8960C"
+        android:pathData="M67,45 L69,45 L69,55 L67,55 Z" />
+    <!-- G -->
+    <path
+        android:fillColor="#C8960C"
+        android:pathData="M72,48 Q72,44 76,44 Q80,44 80,48 L80,52 L77,52 L77,50 L78,50 L78,48 Q78,46 76,46 Q74,46 74,48 L74,52 Q74,54 76,54 L78,54 L78,52 L80,52 L80,54 Q80,56 76,56 Q72,56 72,52 Z" />
+    <!-- N -->
+    <path
+        android:fillColor="#C8960C"
+        android:pathData="M83,44 L85,44 L89,52 L89,44 L91,44 L91,56 L89,56 L85,48 L85,56 L83,56 Z" />
+    <!-- A -->
+    <path
+        android:fillColor="#C8960C"
+        android:pathData="M94,56 L98,44 L102,56 L100,56 L98,50 L96,56 Z M96.5,52 L99.5,52 L99.5,50 L96.5,50 Z" />
+    <!-- N -->
+    <path
+        android:fillColor="#C8960C"
+        android:pathData="M105,44 L107,44 L111,52 L111,44 L113,44 L113,56 L111,56 L107,48 L107,56 L105,56 Z" />
+
+    <!-- ── "UNIVERSITY" text bottom - gold ───────────────────── -->
+    <path
+        android:fillColor="#C8960C"
+        android:pathData="M60,176 L62,176 L62,184 L64,184 L64,176 L66,176 L66,186 L60,186 Z" />
+    <path
+        android:fillColor="#C8960C"
+        android:pathData="M68,176 L70,176 L70,186 L68,186 Z" />
+    <path
+        android:fillColor="#C8960C"
+        android:pathData="M73,176 L79,176 L79,178 L75,178 L75,180 L78,180 L78,182 L75,182 L75,184 L79,184 L79,186 L73,186 Z" />
+    <path
+        android:fillColor="#C8960C"
+        android:pathData="M82,176 L84,176 L87,183 L87,176 L89,176 L89,186 L87,186 L84,179 L84,186 L82,186 Z" />
+
+    <!-- ── Laurel leaves left ─────────────────────────────────── -->
+    <path
+        android:fillColor="#C8960C"
+        android:pathData="M36,100 Q28,90 32,80 Q40,88 36,100 Z" />
+    <path
+        android:fillColor="#C8960C"
+        android:pathData="M34,115 Q24,108 26,96 Q36,102 34,115 Z" />
+    <path
+        android:fillColor="#C8960C"
+        android:pathData="M36,130 Q26,126 30,114 Q40,118 36,130 Z" />
+    <path
+        android:fillColor="#C8960C"
+        android:pathData="M36,100 L34,130" android:strokeColor="#C8960C" android:strokeWidth="2" />
+
+    <!-- ── Laurel leaves right ────────────────────────────────── -->
+    <path
+        android:fillColor="#C8960C"
+        android:pathData="M204,100 Q212,90 208,80 Q200,88 204,100 Z" />
+    <path
+        android:fillColor="#C8960C"
+        android:pathData="M206,115 Q216,108 214,96 Q204,102 206,115 Z" />
+    <path
+        android:fillColor="#C8960C"
+        android:pathData="M204,130 Q214,126 210,114 Q200,118 204,130 Z" />
+
+</vector>

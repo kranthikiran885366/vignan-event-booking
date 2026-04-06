@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Brand -->
+    <color name="primary">#1565C0</color>
+    <color name="primary_dark">#0D47A1</color>
+    <color name="primary_light">#BBDEFB</color>
+    <color name="accent">#0288D1</color>
+
+    <!-- Surface / background -->
+    <color name="background">#F4F7FB</color>
+    <color name="surface">#FFFFFF</color>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="card_background">#FFFFFF</color>
+    <color name="divider">#E0E0E0</color>
+
+    <!-- Screen gradient -->
+    <color name="screen_bg_top">#E8F0FE</color>
+    <color name="screen_bg_bottom">#F4F7FB</color>
+
+    <!-- Text -->
+    <color name="text_primary">#1A1A2E</color>
+    <color name="text_secondary">#5C6B7A</color>
+    <color name="text_hint">#B0BEC5</color>
+    <color name="on_primary">#FFFFFF</color>
+    <color name="on_background">#1A1A2E</color>
+    <color name="on_surface">#1A1A2E</color>
+
+    <!-- Status chip colors -->
+    <color name="status_available">#2E7D32</color>
+    <color name="status_low">#E65100</color>
+    <color name="status_out">#C62828</color>
+
+    <!-- Badge colors -->
+    <color name="badge_available">#2E7D32</color>
+    <color name="badge_low">#E65100</color>
+    <color name="badge_out">#C62828</color>
+    <color name="status_available_bg">#E8F5E9</color>
+    <color name="status_low_bg">#FFF3E0</color>
+    <color name="status_out_bg">#FFEBEE</color>
+
+    <!-- Error -->
+    <color name="error">#B00020</color>
+
+    <!-- Extra surface tints -->
+    <color name="surface_blue">#E3F2FD</color>
+    <color name="surface_green">#E8F5E9</color>
+    <color name="surface_amber">#FFF8E1</color>
+    <color name="surface_red">#FFEBEE</color>
+</resources>
